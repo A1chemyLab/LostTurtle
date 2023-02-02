@@ -1,8 +1,54 @@
 :root {
-  --primary: #1f2122;
-  --primary-text: #f5f5f5;
-  --secondary: #53d4cb;
-  --secondary-text: #175448;
-  --accent: #50505075;
-  --accent-text: #efefef;
+  --primary: #e0e5ec;
+  --primary-text: rgba(0, 0, 0, 0.6);
+  --secondary: #7E8998;
+  --secondary-text: #ffeef2;
+  --accent: #e0e5ec;
+  --accent-text: #7E8998;
+
+  --light-shadow: #ffffff;
+  --dark-shadow: #a3b1c6;
+  --shadow-size: 0.75rem;
+  --shadow-blur: calc(2 * var(--shadow-size));
+  --text-base: #c2cbd9;
+
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: hsl(0, 0%, 7%); /* #111111 */
+		--light-shadow: hsl(0, 0%, 11%); /* #1e1e1e */
+		--dark-shadow: hsl(0, 0%, 3%); /* nearly: black, #000000, actually: #080808 */
+		--accent: hsl(0, 0%, 7%);
+		--text-base: rgba(255, 255, 255, 0.7);
+	}
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+  #nav {
+    margin: 0;
+    padding: 0;
+    /* display: none; */
+  }
+  #Roadmap {
+    display: none;
+  }
+  /* #about {
+    display: none;
+  }
+  #roadmap1 {
+    display: none;
+  }
+  #roadmap2 {
+    display: none;
+  }
+  #roadmapLogo {
+    display: none;
+  } */
+
 }
